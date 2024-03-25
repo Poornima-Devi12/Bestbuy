@@ -183,10 +183,12 @@ public class UtilsBB {
 		String projectPath = System.getProperty("user.dir");
 		if (stepStatus.equalsIgnoreCase("pass")) {
 			test.pass(stepDetails,
-					MediaEntityBuilder.createScreenCaptureFromPath(projectPath + "/Screenshot/" +testName+ ranNum + ".png").build());
+					MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Prabu\\OneDrive\\Desktop\\Poornima Devi JAT15WD\\Excelsheetop\\src\\main\\java\\Failedtestscreenshots" + screenshotName + "-" + date
+							+ ".png").build());
 		} else if (stepStatus.equalsIgnoreCase("fail")) {
 			test.fail(stepDetails,
-					MediaEntityBuilder.createScreenCaptureFromPath(projectPath + "/Screenshot/" +testName +ranNum + ".png").build());
+					MediaEntityBuilder.createScreenCaptureFromPath("C:\\Users\\Prabu\\OneDrive\\Desktop\\Poornima Devi JAT15WD\\Excelsheetop\\src\\main\\java\\Failedtestscreenshots" + screenshotName + "-" + date
+							+ ".png").build());
 			throw new RuntimeException("See extent report for more details");
 		}
 	}
