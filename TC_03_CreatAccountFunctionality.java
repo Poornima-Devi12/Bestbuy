@@ -15,7 +15,7 @@ public class TC_03_CreatAccountFunctionality extends BaseClassBB {
 		testName = "tc_03_validateCreatAccountFunctionality";
 		testDescription = "CreatAccount Functionality";
 		testCategory = "Regression";
-		testAuthor = "Basil Ahamed";
+		testAuthor = "Poornima Devi";
 		sheetName="loginTestData";
 	}
 	
