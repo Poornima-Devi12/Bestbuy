@@ -18,7 +18,7 @@ public class TC_09_CheckOutPageFilling extends BaseClassBB {
 		testName = "tc_09_CheckOutPageFilling";
 		testDescription = "Navigating to the checkout page and filling the form with dummy payment information";
 		testCategory = "Regression";
-		testAuthor = "Basil Ahamed";
+		testAuthor = "Poornima Devi";
 	}
 	
 	@Test(priority=10)
@@ -34,10 +34,10 @@ public class TC_09_CheckOutPageFilling extends BaseClassBB {
 		CartPageBB cp=new CartPageBB();
 		cp.goToCheckOutPage();
 		CheckOutPageBB cop=new CheckOutPageBB();
-		cop.contactInfoAtCheckOut("vino18493@gmail.com", "9876543210");
+		cop.contactInfoAtCheckOut("poornimadevi@gmail.com", "9080256855");
 		reportStep("Validating CheckOut page filling but the application does working properly.if it works properly the commented method in test case will fill the page with responding details - Pass", "Pass", testName);
 		//The below commented line contains script which can run if application works properly
-//		cop.enterDetailsOnCheckOut("5432167890654321", "12", "2025", "321", "SonName", "FatherName", "123 Vvikanandhar Road", "Utto", "DC", "32145");
+//		cop.enterDetailsOnCheckOut("5432167890654321", "12", "2025", "321", "SonName", "FatherName", "35 sakthi nagar", "Utto", "DC", "32145");
 		
 	}
 }
